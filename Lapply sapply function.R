@@ -13,3 +13,5 @@ return("high")
 
 # Apply to each element
 lapply(X = data$mpg, FUN = mpg_category)
+
+sapply(X= data$mpg, FUN = mpg_category())
