@@ -12,6 +12,10 @@ return("high")
 }
 
 # Apply to each element
+#  La fonction lapply retourne une liste
 lapply(X = data$mpg, FUN = mpg_category)
 
-sapply(X= data$mpg, FUN = mpg_category())
+# La fonction sapply applique une formule sur une colonne et retourne un vecteur ou une matrice
+sapply(X = data$mpg, FUN = mpg_category)
+
+# La focntion mapply applique une fonction sur plusieurs vecteurs en m$eme temps
